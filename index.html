@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Rescue Program Web Application First Brainstorm</title>
+    <link rel="icon" type="image/ico" href="/images/favicon.ico">
+  </head>
+  <body>
+    <main>
+        <header>
+            <h1>Cat Rescue Program Web Application First Brainstorm</h1>
+            <h2> This meeting <em>aims</em> to brainstorm and discuss on some good elements could be put 
+                 inside our <br> 
+                 cat rescue program web application design (with research on exisiting rescuing websites online).
+            </h2>
+        </header>
+
+        <footer>
+            <p>Posted by <b>Fangyu Zhu</b> <br>
+            <a href="mailto:fazhu@ucsd.edu">fazhu@ucsd.edu</a> <br>
+            Uploading Date: <b>April 12, 2023</b>(Wednesday)</p>
+        </footer>
+
+        <section>
+            <div>
+            <h3>Some <span>useful</span> online websites about cat rescuing are:</h3>
+            <nav>
+                <a href="https://rescuehouse.org/">The Rescue House</a> |
+                <a href="https://catcafesd.com/adoptable-cats/">The Cat Cafe SD</a> |
+                <a href="https://www.petfinder.com/search/cats-for-adoption/us/ca/san-diego/">PetFinder</a> |
+                <a href="https://www.friendsofcats.org/">Friends of Cats</a>
+            </nav> 
+            </div>
+        </section>
+        <hr>
+        <section>
+            <p><strong>Important Contents & General Outlines - </strong></p>
+            <p>We first <em>need</em> to identify most common kind of cats by reading the book, <i>The Complete Cat Breed Book</i>.</p>
+            <p><i><b>Agenda</b> of what the meeting would <b>cover</b>:</i></p>
+            <ul>
+                <li>Some essential elements on webpage: rescuing cats's picture, basic info (name, age, etc.), story, like or dislike...</li>
+                <li>Aiming clients: nearby neighbors who could be able to pick up cats (need adopters to fill out their main information...) </li>
+                <li>Main goals to achieve: establish a good platform/application to help cats find their future fitting homes</li>
+                <li>Connect with local shelters and cooperate so using website help them better publicize their adopting needs</li>
+            </ul>
+
+            <p><i>Things that were <b>unfinished business</b> from last meeting:</i></p>
+            <ol>
+                <li>Some ways that we <em>can</em> connect with local, physical cat rescuing shelters;</li>
+                <li><em>Using</em> which tool to build out the platform</li>
+            </ol>
+                
+            <p><i>Things that are <b>new business</b> that need to be talked about:</i></p>
+            <ol>
+                <li><em>Communicating</em> with the local shelthers about their needs and requirements put on applications</li>
+                <li>How can we <em>identify</em> each cat and from each shelter by using MySQL databases and give them random IDs</li>
+            </ol>
+        </section>
+        <section>
+            <p>My own adopting cat experience: (name-sky; age-2 years old; breed-tortie)</p>
+            <details>
+                <summary>More introduction about Sky</summary>
+                <p>Sky is a female cat that was firstly found near the border between Mexico and America. She was very young and pregnant and had babies at less than 1 year old.<br>
+                When we brought her home, my roomate (sky is her cat) and we brought lots of love to her.</p>
+              </details>
+            <img src="images/sky.jpeg" alt="Sky cat's picture" width="300" height="200">
+            <video width="300" height="200" controls>
+                <source src="videos/sky.mp4" type="video/mp4">
+                <source src="videos/sky.ogg" type="video/ogg">
+            </video>
+            <br>
+            <p>Meeting outline displayed as image/video/audio files: </p>
+            <img src="images/outline.png" alt="Meeting outline" width="400" height="200">
+            <video width="300" height="200" controls>
+                <source src="videos/meeting.mp4" type="video/mp4">
+                <source src="videos/meeting.ogg" type="video/ogg">
+            </video>
+            <audio controls>
+                <source src="audios/meetingAudio.ogg" type="audio/ogg">
+                <source src="audios/meetingAudio.m4a" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <hr>
+        <h3>Lastly, a simple questionnaire/form to fill out:</h3>
+        <form>
+            <fieldset>
+                <legend>Your opinion matters:</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br>
+
+                <p>Do you like the format on how our meeting goes?</p>
+                <label for="clbox">Like:</label>
+                <input type="checkbox" id="clbox" name="clbox">
+                <label for="cdbox">Dislike:</label>
+                <input type="checkbox" id="cdbox" name="cdbox"><br>
+
+                <label for="rad">Click me if you think we need to improve more:</label>
+                <input type="radio" id="rad" name="rad"><br>
+
+                <label for="dat">Please input today's date for me:</label>
+                <input type="date" id="dat" name="dat"><br>
+
+                <p><label for="comment">Any other comments:</label></p>
+                <textarea id="comment" name="comment" rows="4" cols="50">You could express any other opinions you may have. Your opinion really matter for us to improve. Thank you!</textarea><br>
+
+                <label for="contact">Choose your preferred way of contacting from the list:</label>
+                <input list="contacts" name="contact" id="contact">
+                <datalist id="contacts">
+                    <option value="Email">
+                    <option value="Phone">
+                    <option value="text message">
+                    <option value="Wechat">
+                </datalist><br>
+
+                <label for="spots">Next preferred meeting spot:</label>
+                <select name="spots" id="spots">
+                    <option value="starbucks">Starbucks</option>
+                    <option value="pc">PC</option>
+                    <option value="csb">CSB</option>
+                    <option value="geisel">Geisel</option>
+                </select><br>
+
+                <button type="button" onclick="alert('You are the best!^^')">Click Me!</button>
+                <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+    </main>
+  </body>
+</html>
+
