@@ -1,1 +1,248 @@
-/* all <h1> elements on the page will be center-aligned, with a blue text color */
+/* Universal Selector */
+* {
+    text-align: auto;
+}
+
+/* all <h1> elements on the page will be center-aligned, with a blue text color
+   Element Selector and also include and use a 3rd party font 
+*/
+h1 {
+    font-size: 42px;
+    line-height: .5em;
+    text-align: center;
+    color: rgba(0,0,255,0.7);
+    text-decoration: underline overline;
+    font-family: 'Bruno Ace SC', cursive;
+}
+/* Pseudo-class Selector */
+h1:hover {
+    color: pink;
+}
+
+h2 {
+    font-size: 130%;
+    text-align: center;
+    color: orange;
+}
+
+h3 {
+    font-size: 1.5pc;
+    line-height: 3pc;
+}
+
+/* Combining Two Selectors (element.class) */
+h3.highlight {
+    color: blue;
+}
+
+/* Class Selector */
+.myDivWeb {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    max-height: 100px;
+    max-width: 900px;
+    font-size: 2vw;
+    border-width: 5px;
+    border-style: outset;
+    border-color: #FF0000;
+    background-color: lightblue;
+    text-align: center;
+}
+.myDivWeb:hover {
+    color: pink;
+}
+
+.foot {
+    text-align: center;
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    color: purple;
+}
+
+/* Selector List: select multiple elements */
+em, b {
+    font-weight: bold;
+    color: red;
+}
+
+/* Experiment with these values: none, block, inline-block, inline. */
+.skyIntro {
+    display: inline-block;
+}
+/* Experiment with these values: none, block, inline-block, inline. */
+.moreSky {
+    display: inline;
+}
+.moreSky:hover {
+    color: purple;
+}
+/* Experiment with these values: none, block, inline-block, inline. */
+.goal {
+    display: none;
+}
+
+/* element positioning on the page */
+.cat {
+    position: relative;
+    left: 30px;
+    top: 0px;
+}
+.posText {
+    position: absolute;
+    left: 800px;
+    top: 1190px;
+    font-weight: bold;
+}
+.posFiles {
+    position: absolute;
+    left: 800px;
+    top: 1260px;
+}
+.imageOutline {
+    position: absolute;
+    left: 800px;
+    top: 850px;
+}
+
+p {
+    font-size: 0.5cm;
+    line-height: 1cm;
+    margin: auto;
+}
+
+hr {
+    border-width: 10px;
+}
+
+/* shorthand syntaxes for margins, paddings, and 4 borders */
+ul {
+    height: 150px;
+    width: 900px;
+    font-size: 0.5cm;
+    line-height: 1cm;
+    background-color: lightgray;
+    padding: 10px 10px 10px 30px;
+    margin: 10px 420px 20px 150px;
+    border-width: 6px 4px 6px 4px;
+    border-style: solid dashed solid dashed;
+    border-color: rebeccapurple black pink red;
+    border-radius: 30px 30px 30px 30px;
+}
+/* Child Combinator (element > element) */
+ul > li {
+    color: darkorchid;
+}
+
+/* longhand syntaxes for margins, paddings, and 4 borders */
+ol {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-right: 900px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 7px;
+    border-right-width: 7px;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-left-style: dotted;
+    border-right-style: dotted;
+    border-top-color: palegreen;
+    border-bottom-color: yellow;
+    border-left-color: pink;
+    border-right-color: purple;
+    border-top-right-radius: 5% 20%;
+    border-top-left-radius: 5% 20%;
+    border-bottom-right-radius: 5% 20%;
+    border-bottom-left-radius: 5% 20%;
+    background-color: hsla(89, 43%, 51%, 0.2);
+}
+/* Descendant Combinator (element element) */
+ol li {
+    color: blue;
+}
+/* General sibling combinator (element ~ element) */
+ol ~ p {
+    font-size: 20px;
+}
+/* Adjacent sibling combinator (element + element) */
+ol + p {
+    text-decoration: underline;
+}
+
+/* Pseudo-class */
+button:hover {
+    color: blue;
+}
+button:active {
+    box-shadow: 2px 2px 5px #fc894d;
+}
+
+.next {
+    font-size: 30px;
+    color: red;
+}
+.next:hover {
+    color: green;
+}
+
+/* Layouts - Use Flexbox with three children and more than three flex related attributes */ 
+/* ID Selector */
+#flexContainer {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(223, 177, 232);
+    padding: 20px;
+}
+#flexContainer div {
+    display: flex;
+    height: 60px;
+    width: 440px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 400px;
+    align-self: auto;
+    font-family: 'Bruno Ace SC', cursive;
+}
+  
+/* Layouts - Use Grid with three children and more than three grid related attributes */ 
+.gridContainer {
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-content: center; 
+    background-color: lightblue;
+    padding: 10px;
+}
+/* Child Combinator (element > element) */
+.gridContainer > div {
+    font-size: 20px;
+    background-color: #deb1b1;
+    text-align: center;
+    padding: 20px 0;
+    justify-self: stretch;
+    align-self: center;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+/* Responsiveness: one query based on the screen width, if the screen width is equal to or less 
+   than 1200px, it would then turn the background color into red as it is hard to read. 
+*/
+@media screen and (max-width: 1200px) {
+    body {
+      background-color: red;
+    }
+}

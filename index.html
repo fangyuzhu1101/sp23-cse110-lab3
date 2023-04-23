@@ -6,11 +6,14 @@
     <title>Cat Rescue Program Web Application First Brainstorm</title>
     <link rel="icon" type="image/ico" href="/images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
     <style>
-        /* The internal CSS rule with <style> below will be applied to the HTML element with class="para1": */
-        .para1 {
+        /* The CSS rule below will be applied to the HTML element with id="para1": */
+        #para1 {
             text-align: center;
-            color: orange;
+            color: red;
         }
     </style>
   </head>
@@ -18,26 +21,27 @@
     <main>
         <header>
             <h1>Cat Rescue Program Web Application First Brainstorm</h1>
-            <h2 class = "para1"> This meeting <em>aims</em> to brainstorm and discuss on some good elements could be put 
+            <h2> This meeting <em>aims</em> to brainstorm and discuss on some good elements could be put 
                  inside our <br> 
-                 cat rescue program web application design (with research on exisiting rescuing websites online).
+                 cat rescue program web application design (with <p class="goal"> some </p> research on exisiting rescuing websites online).
             </h2>
         </header>
-
         <footer>
-            <p>Posted by <b>Fangyu Zhu</b> <br>
-            <a href="mailto:fazhu@ucsd.edu">fazhu@ucsd.edu</a> <br>
-            Uploading Date: <b>April 12, 2023</b>(Wednesday)</p>
+            <div class = "foot">
+                <p>Posted by <b>Fangyu Zhu</b> <br>
+                <a href="mailto:fazhu@ucsd.edu">fazhu@ucsd.edu</a> <br>
+                Uploading Date: <b>April 12, 2023</b>(Wednesday)</p>
+            </div>
         </footer>
         <hr>
         <section>
-            <div>
-            <h3>Some <span style="color:red;font-weight:bold">useful</span> online websites about cat rescuing are:</h3>
+            <h3 class = "highlight">Some <span style="color:red;font-weight:bold">useful</span> online websites about cat rescuing are:</h3>
+            <div class="myDivWeb">
             <nav>
-                <a href="https://rescuehouse.org/">The Rescue House</a> |
-                <a href="https://catcafesd.com/adoptable-cats/">The Cat Cafe SD</a> |
-                <a href="https://www.petfinder.com/search/cats-for-adoption/us/ca/san-diego/">PetFinder</a> |
-                <a href="https://www.friendsofcats.org/">Friends of Cats</a>
+                <a href="https://rescuehouse.org/" target="_blank">The Rescue House</a> |
+                <a href="https://catcafesd.com/adoptable-cats/" target="_blank">The Cat Cafe SD</a> |
+                <a href="https://www.petfinder.com/search/cats-for-adoption/us/ca/san-diego/" target="_blank">PetFinder</a> |
+                <a href="https://www.friendsofcats.org/" target="_blank">Friends of Cats</a>
             </nav> 
             </div>
         </section>
@@ -50,45 +54,52 @@
                 <li>Some essential elements on webpage: rescuing cats's picture, basic info (name, age, etc.), story, like or dislike...</li>
                 <li>Aiming clients: nearby neighbors who could be able to pick up cats (need adopters to fill out their main information...) </li>
                 <li>Main goals to achieve: establish a good platform/application to help cats find their future fitting homes</li>
-                <li>Connect with local shelters and cooperate so using website help them better publicize their adopting needs</li>
+                <section><li>Connect with local shelters and cooperate so using website help them better publicize their adopting needs</li></section>
             </ul>
-
             <p><i>Things that were <b>unfinished business</b> from last meeting:</i></p>
             <ol>
-                <li>Some ways that we <em>can</em> connect with local, physical cat rescuing shelters;</li>
+                <section><li>Some ways that we <em>can</em> connect with local, physical cat rescuing shelters;</li></section>
                 <li><em>Using</em> which tool to build out the platform</li>
             </ol>
                 
             <p><i>Things that are <b>new business</b> that need to be talked about:</i></p>
+            <p> (these are things that need to be resolved during the next meeting!) </p>
             <ol>
                 <li><em>Communicating</em> with the local shelthers about their needs and requirements put on applications</li>
                 <li>How can we <em>identify</em> each cat and from each shelter by using MySQL databases and give them random IDs</li>
             </ol>
+            <div class = "imageOutline">
+                <img src="images/outline.png" alt="Meeting outline" width="500" height="270">
+            </div>
         </section>
+        <hr>
         <section>
-            <h3>My own adopting cat experience: (name-sky; age-2 years old; breed-tortie)</h3>
+            <p class = "cat"> My own adopting cat experience: (name-sky; age-2 years old; breed-tortie) </p>
             <details>
-                <summary>More introduction about Sky</summary>
-                <p>Sky is a female cat that was firstly found near the border between Mexico and America. She was very young and pregnant and had babies at less than 1 year old.<br>
-                When we brought her home, my roomate (sky is her cat) and we brought lots of love to her.</p>
-              </details>
+                <summary><p class = "moreSky">More introduction about Sky</p></summary>
+                <div>
+                    Sky is a <p class="skyIntro"> female cat </p> that was firstly found near the border between Mexico and America. 
+                    <br> She was very young and pregnant and had babies at less than 1 year old.<br>
+                    When we brought her home, my roomate (sky is her cat) and we brought <p class="skyIntro"> lots of love </p> to her.
+                </div>
+            </details>
             <img src="images/sky.jpeg" alt="Sky cat's picture" width="300" height="200">
             <video width="300" height="200" controls>
                 <source src="videos/sky.mp4" type="video/mp4">
                 <source src="videos/sky.ogg" type="video/ogg">
             </video>
             <br>
-            <p>Meeting outline displayed as image/video/audio files: </p>
-            <img src="images/outline.png" alt="Meeting outline" width="400" height="200">
-            <video width="300" height="200" controls>
-                <source src="videos/meeting.mp4" type="video/mp4">
-                <source src="videos/meeting.ogg" type="video/ogg">
-            </video>
-            <audio controls>
-                <source src="audios/meetingAudio.ogg" type="audio/ogg">
-                <source src="audios/meetingAudio.m4a" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <p class = "posText">Meeting outline displayed as image/video/audio files: </p>
+            <div class = "posFiles">
+                <video width="300" height="200" controls>
+                    <source src="videos/meeting.mp4" type="video/mp4">
+                    <source src="videos/meeting.ogg" type="video/ogg">
+                </video>
+                <audio controls>
+                    <source src="audios/meetingAudio.ogg" type="audio/ogg">
+                    <source src="audios/meetingAudio.m4a" type="audio/mpeg">
+                </audio>
+            </div>
         </section>
         <hr>
         <h3>Lastly, a simple questionnaire/form to fill out:</h3>
@@ -99,22 +110,17 @@
                 <input type="text" id="fname" name="fname">
                 <label for="lname">Last name:</label>
                 <input type="text" id="lname" name="lname"><br>
-
                 <p>Do you like the format on how our meeting goes?</p>
                 <label for="clbox">Like:</label>
                 <input type="checkbox" id="clbox" name="clbox">
                 <label for="cdbox">Dislike:</label>
                 <input type="checkbox" id="cdbox" name="cdbox"><br>
-
                 <label for="rad">Click me if you think we need to improve more:</label>
                 <input type="radio" id="rad" name="rad"><br>
-
                 <label for="dat">Please input today's date for me:</label>
                 <input type="date" id="dat" name="dat"><br>
-
                 <p><label for="comment">Any other comments:</label></p>
                 <textarea id="comment" name="comment" rows="4" cols="50">You could express any other opinions you may have. Your opinion really matter for us to improve. Thank you!</textarea><br>
-
                 <label for="contact">Choose your preferred way of contacting from the list:</label>
                 <input list="contacts" name="contact" id="contact">
                 <datalist id="contacts">
@@ -123,7 +129,6 @@
                     <option value="text message">
                     <option value="Wechat">
                 </datalist><br>
-
                 <label for="spots">Next preferred meeting spot:</label>
                 <select name="spots" id="spots">
                     <option value="starbucks">Starbucks</option>
@@ -131,11 +136,27 @@
                     <option value="csb">CSB</option>
                     <option value="geisel">Geisel</option>
                 </select><br>
-
                 <button type="button" onclick="alert('You are the best!^^')">Click Me!</button>
                 <input type="submit" value="Submit">
             </fieldset>
           </form>
+          <hr>
+          <p class = "next"> Then, what do we do in next meeting?</p>
+          <div id = "flexContainer">
+            <div style="background-color:lightblue;">Assigning tasks for each member (ex. css, js...)</div>
+            <div style="background-color:lightgrey;">Finishing planning stages with clear diagrams</div>
+            <div style="background-color:lightgreen;">Beginning to write codes based on smaller groups</div>
+          </div>
+          <hr>
+          <p class = "next"> What to bring during the next meeting?</p>
+          <div class="gridContainer">
+            <div>Your Fancy Laptop</div>
+            <div>Your Awaken Brain</div>
+            <div>Your Creative Minds & Thoughts</div>
+            <div>Your Favoriate Cat Breed</div>
+            <div>Your Physical Body Here</div>
+            <div>Your Important Ideas</div>
+          </div>
     </main>
   </body>
 </html>
